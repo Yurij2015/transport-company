@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="transportcomp@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="transportcomp">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="123"/>
+    <schema id="4" parent="1" name="ajax_crud"/>
+    <schema id="5" parent="1" name="bdgoscentr"/>
+    <schema id="6" parent="1" name="biometr-data"/>
+    <schema id="7" parent="1" name="cfschoolsite"/>
+    <schema id="8" parent="1" name="cinema"/>
+    <schema id="9" parent="1" name="clinika"/>
+    <schema id="10" parent="1" name="clinik_crm"/>
+    <schema id="11" parent="1" name="cms"/>
+    <schema id="12" parent="1" name="db_18"/>
+    <schema id="13" parent="1" name="diplom_studhouse"/>
+    <schema id="14" parent="1" name="dle"/>
+    <schema id="15" parent="1" name="ecommerce1"/>
+    <schema id="16" parent="1" name="firefighting"/>
+    <schema id="17" parent="1" name="furniture"/>
+    <schema id="18" parent="1" name="geforce"/>
+    <schema id="19" parent="1" name="goodkey"/>
+    <schema id="20" parent="1" name="hypertext-system"/>
+    <schema id="21" parent="1" name="idz"/>
+    <schema id="22" parent="1" name="IDZ_2"/>
+    <schema id="23" parent="1" name="information_schema"/>
+    <schema id="24" parent="1" name="isportal"/>
+    <schema id="25" parent="1" name="isstart"/>
+    <schema id="26" parent="1" name="is_eds"/>
+    <schema id="27" parent="1" name="kadastr-order"/>
+    <schema id="28" parent="1" name="kindergarten"/>
+    <schema id="29" parent="1" name="kompservis"/>
+    <schema id="30" parent="1" name="mediccrm"/>
+    <schema id="31" parent="1" name="minicms"/>
+    <schema id="32" parent="1" name="montag"/>
+    <schema id="33" parent="1" name="mydb"/>
+    <schema id="34" parent="1" name="mysql"/>
+    <schema id="35" parent="1" name="netbiz"/>
+    <schema id="36" parent="1" name="new_oop"/>
+    <schema id="37" parent="1" name="parser"/>
+    <schema id="38" parent="1" name="performance_schema"/>
+    <schema id="39" parent="1" name="portfolio"/>
+    <schema id="40" parent="1" name="promosite"/>
+    <schema id="41" parent="1" name="regcak"/>
+    <schema id="42" parent="1" name="scientists"/>
+    <schema id="43" parent="1" name="servis"/>
+    <schema id="44" parent="1" name="simple_aja_form"/>
+    <schema id="45" parent="1" name="sinilink"/>
+    <schema id="46" parent="1" name="sql"/>
+    <schema id="47" parent="1" name="stroj-dom"/>
+    <schema id="48" parent="1" name="sys"/>
+    <schema id="49" parent="1" name="testsfdrupal"/>
+    <schema id="50" parent="1" name="trudoustrojstvo"/>
+    <schema id="51" parent="1" name="video"/>
+    <schema id="52" parent="1" name="wp_roots"/>
+    <schema id="53" parent="1" name="yii2advanced"/>
+    <schema id="54" parent="1" name="yiibasic"/>
+    <schema id="55" parent="1" name="zhkh"/>
+    <schema id="56" parent="1" name="astoria"/>
+    <schema id="57" parent="1" name="efis"/>
+    <schema id="58" parent="1" name="imaster"/>
+    <schema id="59" parent="1" name="megafort"/>
+    <schema id="60" parent="1" name="volgedu"/>
+    <table id="61" parent="2" name="admins"/>
+    <table id="62" parent="2" name="cargo"/>
+    <table id="63" parent="2" name="contactform"/>
+    <table id="64" parent="2" name="distance"/>
+    <table id="65" parent="2" name="location"/>
+    <table id="66" parent="2" name="pages"/>
+    <table id="67" parent="2" name="shipment"/>
+    <table id="68" parent="2" name="subjects"/>
+    <table id="69" parent="2" name="transport"/>
+    <column id="70" parent="61" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="71" parent="61" name="username">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="61" name="hashed_password">
+      <Position>3</Position>
+      <DataType>varchar(60)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="73" parent="61" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="74" parent="62" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="75" parent="62" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="76" parent="62" name="description">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="77" parent="62" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="78" parent="63" name="idzakaz">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="79" parent="63" name="name_lastname_klienta">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="80" parent="63" name="homeadress">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="63" name="date">
+      <Position>4</Position>
+      <DataType>varchar(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="82" parent="63" name="message">
+      <Position>5</Position>
+      <DataType>longtext|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="63" name="phonenumber">
+      <Position>6</Position>
+      <DataType>varchar(44)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="84" parent="63" name="email">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="85" parent="63" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>idzakaz</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="86" parent="64" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="87" parent="64" name="name">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="64" name="locationfrom">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="64" name="locationto">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="90" parent="64" name="distance">
+      <Position>5</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="91" parent="64" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="92" parent="65" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="65" name="name">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="94" parent="65" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="95" parent="66" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="96" parent="66" name="subject_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="66" name="menu_name">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="66" name="position">
+      <Position>4</Position>
+      <DataType>int(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="99" parent="66" name="visible">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="100" parent="66" name="content">
+      <Position>6</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <index id="101" parent="66" name="subject_id">
+      <ColNames>subject_id</ColNames>
+    </index>
+    <key id="102" parent="66" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="103" parent="67" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="104" parent="67" name="shipmentnumber">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="105" parent="67" name="transport">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="67" name="cargo">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="107" parent="67" name="count">
+      <Position>5</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="108" parent="67" name="transportationfrom">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="109" parent="67" name="transportatioto">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="67" name="distance">
+      <Position>8</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="67" name="cost">
+      <Position>9</Position>
+      <DataType>float|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="67" name="begin">
+      <Position>10</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="113" parent="67" name="end">
+      <Position>11</Position>
+      <DataType>date|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="67" name="description">
+      <Position>12</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="115" parent="67" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="116" parent="68" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="117" parent="68" name="menu_name">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="118" parent="68" name="position">
+      <Position>3</Position>
+      <DataType>int(3)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="119" parent="68" name="visible">
+      <Position>4</Position>
+      <DataType>tinyint(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="120" parent="68" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="121" parent="69" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="122" parent="69" name="number">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="123" parent="69" name="name">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="124" parent="69" name="type">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="125" parent="69" name="tonnage">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="126" parent="69" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

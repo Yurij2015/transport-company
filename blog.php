@@ -31,7 +31,7 @@
                     <div class="service-sidebar sidebar-wrapper">
 
                         <div class="widget">
-                            <h2 class="widget-title">Меню</h2>
+                            <h2 class="widget-title">Категории</h2>
                             <ul class="service-list">
                                 <h2><?php echo htmlentities($current_page["menu_name"], ENT_QUOTES, "UTF-8"); ?></h2>
                                 <?php if ($current_page) { ?>
