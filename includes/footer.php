@@ -23,7 +23,7 @@
                                     <button type="button" class="close" data-dismiss="modal"
                                             aria-label="Close"><span aria-hidden="true">&times;</span>
                                     </button>
-                                    <h4 class="modal-title" id="myModalLabel">Our Location</h4>
+                                    <h4 class="modal-title" id="myModalLabel">Мы здесь!</h4>
                                 </div>
                                 <div class="modal-body">
 
@@ -38,7 +38,7 @@
 
             <div class="col-md-3 col-sm-4">
                 <div class="footer-widget">
-                    <h3>Новости компании</h3>
+                    <h4>Предварительная оценка</h4>
 
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-4 -->
@@ -66,17 +66,17 @@
 <!-- copyright-section start -->
 <footer class="copyright-section">
     <div class="container text-center">
-<!--        <div class="footer-menu">-->
-<!--            <ul>-->
+        <div class="footer-menu">
+            <ul>
 <!--                <li><a href="#">Privacy &amp; Cookies</a></li>-->
-<!--                <li><a href="#">Terms &amp; Conditions</a></li>-->
+                <li><a href="/admin.php">админ-панель</a></li>
 <!--                <li><a href="#">Accessibility</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
+            </ul>
+        </div>
 
         <div class="copyright-info">
                         <span>Copyright © <?php echo date("Y"); ?>, <a
-                                    href="/">Транспортная компания<?php if ($layout_context == "admin") {
+                                    href="/">Транспортная компания ООО "Магистраль"<?php if ($layout_context == "admin") {
                                     echo ": Панель администратора";
                                 } ?></a></span>
         </div>
@@ -86,75 +86,6 @@
 </div> <!-- .st-content -->
 </div> <!-- .st-pusher -->
 
-<!-- OFF CANVAS MENU -->
-<div class="offcanvas-menu offcanvas-effect">
-    <div class="offcanvas-wrap">
-        <div class="off-canvas-header">
-            <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
-                    id="off-canvas-close-btn">&times;
-            </button>
-        </div>
-        <ul id="offcanvasMenu" class="list-unstyled visible-xs visible-sm">
-            <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-            <li>
-                <a href="#">Pages</a>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="our-people.html">Our people</a></li>
-                    <li><a href="career.html">Career</a></li>
-                    <li><a href="faq.html">FAQ Page</a></li>
-                    <li><a href="typography.html">Typography</a></li>
-                </ul>
-
-            </li>
-            <li>
-                <a href="#">Services</a>
-                <ul>
-                    <li><a href="air.html">Air transportation</a></li>
-                    <li><a href="marine.html">Marine transportation</a></li>
-                    <li><a href="moving.html">Moving &amp; storage</a></li>
-                    <li><a href="shipping.html">Shipping &amp; operations</a></li>
-                    <li><a href="transportation.html">Transportation logistics</a></li>
-                    <li><a href="trucking.html">Trucking</a></li>
-                </ul>
-
-            </li>
-            <li>
-                <a href="#">Blog</a>
-                <ul>
-                    <li>
-                        <a href="blog.html">Standard blog</a>
-                    </li>
-                    <li>
-                        <a href="blog-single.html">Single blog</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="typography.html">Typography</a></li>
-        </ul>
-        <div class="offcanvas-widgets hidden-sm hidden-xs">
-            <div id="twitterWidget">
-                <h2>Tweeter feed</h2>
-                <div class="twitter-widget"></div>
-            </div>
-            <div class="newsletter-widget">
-                <h2>Stay in Touch</h2>
-                <p>Enter your email address to receive news &amp; offers from us</p>
-
-                <form class="newsletter-form">
-                    <div class="form-group">
-                        <label class="sr-only" for="InputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail2" placeholder="Your email address">
-                        <button type="submit" class="btn">Send &nbsp;<i class="fa fa-angle-right"></i></button>
-                    </div>
-                </form>
-
-            </div><!-- newsletter-widget -->
-        </div>
-    </div>
-</div><!-- .offcanvas-menu -->
 </div><!-- /st-container -->
 
 
@@ -193,6 +124,7 @@
 <script src="../js/twitterFetcher_min.js"></script>
 <!-- Custom Script -->
 <script src="../js/scripts.js"></script>
+
 </body>
 </html>
 

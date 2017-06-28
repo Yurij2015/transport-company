@@ -10,7 +10,6 @@ if (!$admin) {
     redirect_to("manage_admins.php");
 }
 ?>
-
 <?php
 if (isset($_POST['submit'])) {
     // Обработка формы

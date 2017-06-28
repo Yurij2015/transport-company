@@ -1,0 +1,26 @@
+.subjects a {
+    background: #F8F8F8;
+    padding: 0 0 0 15px;
+    display: block;
+    height: 40px;
+}
+
+.subjects a:hover {
+    text-decoration: none;
+    background: #e7ecf4
+}
+
+ul.subjects {
+    padding-left: 0;
+    list-style: none
+}
+
+ul.pages {
+    padding-left: 1em;
+
+}
+
+ul.subjects a:hover {
+    text-decoration: none;
+}
+

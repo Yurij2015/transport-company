@@ -41,6 +41,9 @@ if (!isset ($layout_context)) {
     <!-- Responsive CSS -->
     <link href="../css/responsive.css" rel="stylesheet">
 
+    <!-- My Custom CSS -->
+    <link href="../css/customstyle.css" rel="stylesheet">
+
     <script src="../js/vendor/modernizr-2.8.1.min.js"></script>
     <!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,10 +97,10 @@ if (!isset ($layout_context)) {
                                                                                             alt=""></a></h1>
 
                             <!-- offcanvas-trigger -->
-                            <button type="button" class="navbar-toggle collapsed pull-right">
-                                <span class="sr-only">Toggle navigation</span>
-                                <i class="fa fa-bars"></i>
-                            </button>
+<!--                            <button type="button" class="navbar-toggle collapsed pull-right">-->
+<!--                                <span class="sr-only">Toggle navigation</span>-->
+<!--                                <i class="fa fa-bars"></i>-->
+<!--                            </button>-->
 
                         </div>
 

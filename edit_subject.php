@@ -53,76 +53,77 @@ if (isset($_POST['submit'])) {
 <?php $layout_context = "admin"; ?>
 <?php include 'includes/header.php'; ?>
 
-    <!-- edit subject -->
-    <div class="news">
+
+    <!-- Admin-Start -->
+    <section class="single-service-contents">
         <div class="container">
-            <div class="news-grid">
-                <div class="col-md-8 blog-left">
-                    <div class="blog-left-grid">
+            <div class="row">
+                <div class="col-md-3 col-sm-5 col-xs-12">
+                    <div class="service-sidebar sidebar-wrapper">
 
+                        <div class="widget">
+                            <h2 class="widget-title">Меню</h2>
+                            <ul class="service-list">
+                                <h3>Публичная часть</h3>
+                                <?php echo navigation($current_subject, $current_page); ?>
+                                <h3>Администатор</h3>
+                                <?php include "includes/adminmenu.php" ?>
+                            </ul>
+                        </div><!-- /.widget -->
 
-                        <?php // $message is just a variable, doesn't use the SESSION
-                        if (!empty($message)) {
-                            echo "<div class=\"message\">" . $message . "</div>";
-                        }
-                        ?>
-                        <?php echo form_errors($errors); ?>
+                    </div><!-- /.sidebar-wrapper -->
+                </div><!-- /.col -->
+                <div class="col-md-9 col-sm-7 col-xs-12">
 
-                        <h2>Редактировать категорию: <?php echo $current_subject["menu_name"]; ?></h2>
-                        <form action="edit_subject.php?subject=<?php echo $current_subject["id"]; ?>" method="post">
-                            <p>Название:
-                                <input type="text" name="menu_name" value="<?php echo $current_subject["menu_name"]; ?>"/>
-                            </p>
-                            <p>Position:
-                                <select name="position">
-                                    <?php
-                                    $subject_set = find_all_subjects(false);
-                                    $subject_count = mysqli_num_rows($subject_set);
-                                    for ($count = 1; $count <= $subject_count; $count++) {
-                                        echo "<option value=\"{$count}\"";
-                                        if ($current_subject["position"] == $count) {
-                                            echo " selected";
-                                        }
-                                        echo ">{$count}</option>";
+                    <?php // $message is just a variable, doesn't use the SESSION
+                    if (!empty($message)) {
+                        echo "<div class=\"message\">" . $message . "</div>";
+                    }
+                    ?>
+                    <?php echo form_errors($errors); ?>
+
+                    <h2>Редактировать категорию: <?php echo $current_subject["menu_name"]; ?></h2>
+                    <form action="edit_subject.php?subject=<?php echo $current_subject["id"]; ?>" method="post">
+                        <p>Название:
+                            <input type="text" class="form-control" name="menu_name" value="<?php echo $current_subject["menu_name"]; ?>"/>
+                        </p>
+                        <p>Position:
+                            <select name="position" class="form-control">
+                                <?php
+                                $subject_set = find_all_subjects(false);
+                                $subject_count = mysqli_num_rows($subject_set);
+                                for ($count = 1; $count <= $subject_count; $count++) {
+                                    echo "<option value=\"{$count}\"";
+                                    if ($current_subject["position"] == $count) {
+                                        echo " selected";
                                     }
-                                    ?>
-                                </select>
-                            </p>
-                            <p>Visible:
-                                <input type="radio" name="visible" value="0" <?php if ($current_subject["visible"] == 0) {
-                                    echo "checked";
-                                } ?> /> Нет
-                                &nbsp;
-                                <input type="radio" name="visible" value="1" <?php if ($current_subject["visible"] == 1) {
-                                    echo "checked";
-                                } ?>/> Да
-                            </p>
-                            <input type="submit" name="submit" value="Редактировать"/>
-                        </form>
-                        <br/>
-                        <a href="manage_table.php">Отмена</a>
-                        &nbsp;
-                        &nbsp;
-                        <a href="delete_subject.php?subject=<?php echo $current_subject["id"] ?>"
-                           onclick="return confirm('Вы уверены?');">Удалить категорию</a>
-                    </div>
-                </div>
-                <div class="col-md-4 blog-right">
-                    <h2>Меню публичной части</h2>
-                    <?php echo navigation($current_subject, $current_page); ?>
-                    <h2>Меню</h2>
-                    <ul>
-                        <li><a href="contactform_list.php">Список заявок</a></li>
-                        <li><a href="manage_admins.php">Управление администраторами</a></li>
-                        <li><a href="manage_table.php">Изменить данные публичной части</a></li>
-                        <li><a href="new_subject.php">Добавить раздел в публичную часть</a></li>
-                        <li><a href="logout.php">Выход</a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
+                                    echo ">{$count}</option>";
+                                }
+                                ?>
+                            </select>
+                        </p>
+                        <p>Visible:
+                            <input type="radio"  name="visible" value="0" <?php if ($current_subject["visible"] == 0) {
+                                echo "checked";
+                            } ?> /> Нет
+                            &nbsp;
+                            <input type="radio" name="visible" value="1" <?php if ($current_subject["visible"] == 1) {
+                                echo "checked";
+                            } ?>/> Да
+                        </p>
+                        <input type="submit" class="btn btn-primary"  name="submit" value="Редактировать"/>
+                    </form>
+                    <br/>
+                    <a href="manage_table.php">Отмена</a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="delete_subject.php?subject=<?php echo $current_subject["id"] ?>"
+                       onclick="return confirm('Вы уверены?');">Удалить категорию</a>
 
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+    <!-- Admin-End-->
 
 <?php include 'includes/footer.php';

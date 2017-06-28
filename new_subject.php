@@ -4,64 +4,67 @@
 <?php $layout_context = "admin"; ?>
 <?php include 'includes/header.php'; ?>
 <?php find_selected_page(); ?>
-    <!-- add category page -->
-    <div class="news">
+
+
+    <!-- Admin-Start -->
+    <section class="single-service-contents">
         <div class="container">
-            <div class="news-grid">
-                <div class="col-md-8 blog-left">
-                    <div class="blog-left-grid">
-                        <?php echo message(); ?>
-                        <?php $errors = errors(); ?>
-                        <?php echo form_errors($errors); ?>
-                        <h2>Создать категорию</h2>
-                        <form role="form" action="create_subject.php" method="post">
+            <div class="row">
+                <div class="col-md-3 col-sm-5 col-xs-12">
+                    <div class="service-sidebar sidebar-wrapper">
 
-                            <label>Название:</label>
-                            <input type="text" class="form-control" name="menu_name" value=""/>
+                        <div class="widget">
+                            <h2 class="widget-title">Меню</h2>
+                            <ul class="service-list">
+                                <h3>Публичная часть</h3>
+                                <?php echo navigation($current_subject, $current_page); ?>
+                                <h3>Администатор</h3>
+                                <?php include "includes/adminmenu.php" ?>
+                            </ul>
+                        </div><!-- /.widget -->
 
-                            <label>Позиция:</label>
+                    </div><!-- /.sidebar-wrapper -->
+                </div><!-- /.col -->
+                <div class="col-md-9 col-sm-7 col-xs-12">
 
-                            <select class="form-control" name="position">
-                                <?php
-                                $subject_set = find_all_subjects(false);
-                                $subject_count = mysqli_num_rows($subject_set);
-                                for ($count = 1; $count <= ($subject_count + 1); $count++) {
-                                    echo "<option value=\"{$count}\">{$count}</option>";
-                                }
-                                ?>
-                            </select>
+                    <?php echo message(); ?>
+                    <?php $errors = errors(); ?>
+                    <?php echo form_errors($errors); ?>
+                    <h2>Создать категорию</h2>
+                    <form role="form" action="create_subject.php" method="post">
 
+                        <label>Название:</label>
+                        <input type="text" class="form-control" name="menu_name" value=""/>
 
-                            <label>Видимость:</label>
-                            <input type="radio" name="visible" value="0"/> Нет
-                            <input type="radio" name="visible" value="1"/> Да
-                            </p>
-                            <input type="submit" class="btn btn-group-justified" name="submit"
-                                   value="Создать категорию"/>
+                        <label>Позиция:</label>
 
-                        </form>
-                        <br/>
-                        <a href="manage_table.php">Отменить</a>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+                        <select class="form-control" name="position">
+                            <?php
+                            $subject_set = find_all_subjects(false);
+                            $subject_count = mysqli_num_rows($subject_set);
+                            for ($count = 1; $count <= ($subject_count + 1); $count++) {
+                                echo "<option value=\"{$count}\">{$count}</option>";
+                            }
+                            ?>
+                        </select>
 
 
-                <div class="col-md-4 blog-right">
-                    <h2>Меню публичной части</h2>
-                    <?php echo navigation($current_subject, $current_page); ?>
-                    <h2>Меню</h2>
-                    <ul>
-                        <li><a href="contactform_list.php">Вопросы обратной связи</a></li>
-                        <li><a href="manage_admins.php">Управление администраторами</a></li>
-                        <li><a href="manage_table.php">Изменить данные публичной части</a></li>
-                        <li><a href="logout.php">Выход</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
+                        <label>Видимость:</label>
+                        <input type="radio" name="visible" value="0"/> Нет
+                        <input type="radio" name="visible" value="1"/> Да
+                        </p>
+                        <input type="submit" class="btn btn-group-justified" name="submit"
+                               value="Создать категорию"/>
+
+                    </form>
+                    <br/>
+                    <a href="manage_table.php">Отменить</a>
+
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+    <!-- Admin-End-->
 
     <!-- //add category page -->
 <?php include 'includes/footer.php';

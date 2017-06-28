@@ -224,7 +224,7 @@
 				$output .= " class=\"selected\"";
 			}
 			$output .= ">";
-			$output .= "<a href=\"index.php?subject=";
+			$output .= "<a href=\"blog.php?subject=";
 			$output .= urlencode($subject["id"]);
 			$output .= "\">";
 			$output .= $subject["menu_name"];
@@ -239,7 +239,7 @@
 					$output .= " class=\"selected\"";
 				} 
 				$output .= ">";
-				$output .= "<a href=\"index.php?page="; 
+				$output .= "<a href=\"blog.php?page=";
 				$output .= urlencode($page["id"]);
 				$output .= "\">";
 				$output .= $page["menu_name"];
