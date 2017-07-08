@@ -28,7 +28,7 @@
                         <div class="phone animated lightSpeedIn">+7(914)6469252</div>
                         <h1 class="animated lightSpeedIn">Грузоперевозки</h1>
 
-                        <p class="lead animated lightSpeedIn">Обеспечиваем сохранногость груза,<br>качественное
+                        <p class="lead animated lightSpeedIn">Обеспечиваем сохранность груза,<br>качественное
                             обслуживание,<br> быстрое оформление. </p>
 
                         <a class="btn btn-primary animated lightSpeedIn" href="orderform.php">Оформить

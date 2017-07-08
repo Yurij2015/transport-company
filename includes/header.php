@@ -65,7 +65,7 @@ if (!isset ($layout_context)) {
                                 <div class="col-sm-6 col-xs-12">
                                     <div class="call-to-action">
                                         <ul class="list-inline">
-                                            <li><a href="#"><i class="fa fa-phone"></i> +79146469252</a></li>
+                                            <li><a href="#"><i class="fa fa-phone"></i> 89621252245, 89147592130</a></li>
                                             <li><a href="#"><i class="fa fa-envelope"></i> logistic@magistraltransport.ru</a>
                                             </li>
                                         </ul>

@@ -25,7 +25,7 @@
                 <h4> <?php echo message(); ?></h4>
                 <h4>  <?php echo form_errors($errors); ?></h4>
                 <h4> <?php $errors = errors(); ?></h4>
-                <span class="section-sub">Мы рассмотрим заявку и свяжемся с вами!</span>
+                <span class="section-sub">Мы рассмотрим заявку и свяжемся с Вами!</span>
             </div>
 
             <div class="row content-row">
