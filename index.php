@@ -5,32 +5,26 @@
 <?php $page = "index"; ?>
 <?php include 'includes/header.php'; ?>
 <?php find_selected_page(true); ?>
-
     <!-- welcome -->
-
-
     <div id="main-carousel" class="carousel slide hero-slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#main-carousel" data-slide-to="1"></li>
         </ol>
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <img src="./img/slider/slide-1.jpg" alt="Заказ транспортировки">
                 <!--Slide Image-->
-
                 <div class="container">
                     <div class="carousel-caption">
                         <small class="animated fadeIn">ЗАКАЗ ТРАНСПОРТИРОВКИ</small>
-                        <div class="phone animated lightSpeedIn">+7(914)6469252</div>
+                        <div class="phone animated lightSpeedIn">89621252245, 89147592130</div>
                         <h1 class="animated lightSpeedIn">Грузоперевозки</h1>
 
                         <p class="lead animated lightSpeedIn">Обеспечиваем сохранность груза,<br>качественное
                             обслуживание,<br> быстрое оформление. </p>
-
                         <a class="btn btn-primary animated lightSpeedIn" href="orderform.php">Оформить
                             заказ</a>
                     </div>
@@ -39,16 +33,12 @@
                 <!--.container-->
             </div>
             <!--.item-->
-
             <div class="item">
                 <img src="./img/slider/slide-2.jpg" alt="Работа с клиентами">
                 <!--Slide Image-->
-
                 <div class="container">
                     <div class="carousel-caption">
-
                         <h1 class="animated bounceIn">Мы ценим ваше время</h1>
-
                         <p class="lead animated bounceIn">Наши специалисты с радостью помогут вам и проконсультируют по
                             всем <br> интересующим
                             вопросам.</p>
@@ -61,7 +51,6 @@
             <!--.item-->
         </div>
         <!--.carousel-inner-->
-
         <!-- Controls -->
         <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
             <i class="fa fa-angle-left" aria-hidden="true"></i>
