@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-md-3 col-md-offset-1 col-sm-4">
                 <div class="footer-widget">
-                    <h3>Адрес и контакты</h3>
+                    <h3>Адрес</h3>
                     <address>
                         г. Корсаков<br>
                         ул. Портовая, 20<br>
@@ -12,7 +12,6 @@
                         <button type="button" class="modal-map" data-toggle="modal"
                                 data-target="#cssMapModal">Мы на карте
                         </button>
-                        <span class="tel">89146469252<br>89147592130<br>89621252245</span>
 
                     </address>
                     <!-- Modal -->
@@ -39,80 +38,8 @@
 
             <div class="col-md-3 col-sm-4">
                 <div class="footer-widget">
-                    <h3><a name="calculation" style="color: #606676">Оценка</a></h3>
-                    <p>Стоимость перевозки 20 футовых контейнеров из/в Корсаков </p>
-                    <h4>20 футовые контейнеры</h4>
-                    <form action="/orderform.php#calculation" method="post">
-                        <div class="form-group">
-                            <label for="place">В/из населенного пункта</label>
-                            <select class="form-control" name="place" id="place">
-                                <option value="Александровск-Сахалинский">Александровск-Сахалинский</option>
-                                <option value="Анива">Анива</option>
-                                <option value="Арги-Паги">Арги-Паги</option>
-                                <option value="Арсентьевка">Арсентьевка</option>
-                                <option value="Береговое">Береговое</option>
-                                <option value="Березняки">Березняки</option>
-                                <option value="Быков">Быков</option>
-                                <option value="Бошняково">Бошняково</option>
-                                <option value="Вал">Вал</option>
-                                <option value="Вахрушев">Вахрушев</option>
-                                <option value="Взморье">Взморье</option>
-                                <option value="Восток">Восток</option>
-                                <option value="Восточный">Восточный</option>
-                                <option value="Гастелло ">Гастелло</option>
-                                <option value="Горнозаводск">Горнозаводск</option>
-                                <option value="Долинск">Долинск</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="submit" class="btn btn-primary" value="Рассчитать">
-                        </div>
-
-                        <?php
-                        $place = $_POST['place'];
-
-                        if ($place == 'Александровск-Сахалинский') {
-                            $calculation = 71000;
-                        } elseif ($place == 'Анива') {
-                            $calculation = 16000;
-                        } elseif ($place == 'Арги-Паги') {
-                            $calculation = 72500;
-                        } elseif ($place == 'Арсентьевка') {
-                            $calculation = 25000;
-                        } elseif ($place == 'Береговое') {
-                            $calculation = 14500;
-                        } elseif ($place == 'Березняки') {
-                            $calculation = 15000;
-                        } elseif ($place == 'Бошняково') {
-                            $calculation = 57000;
-                        } elseif ($place == 'Вал') {
-                            $calculation = 80000;
-                        } elseif ($place == 'Вахрушев') {
-                            $calculation = 36000;
-                        } elseif ($place == 'Взморье') {
-                            $calculation = 24000;
-                        } elseif ($place == 'Восток') {
-                            $calculation = 36000;
-                        } elseif ($place == 'Восточный') {
-                            $calculation = 28500;
-                        } elseif ($place == 'Быков') {
-                            $calculation = 19000;
-                        }
-
-                        ?>
-                        <h5 style="color: red"><?php
-                            if ($_POST) {
-                            echo "Расчет для - " . $place;
-                            ?></h5>
-                        <h3 style="color: red"><?php
-                            echo 'Стоимость: ';
-                            echo $calculation;
-                            }
-
-
-                            ?>
-                        </h3>
-                    </form>
+                    <h3><a name="calculation" style="color: #606676">Телефоны</a></h3>
+                    <p>89146469252<br>89147592130<br>89621252245</p>
 
 
                 </div><!-- /.footer-widget -->
